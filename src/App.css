@@ -1,38 +1,245 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgba(219, 208, 208, 0.536);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(143, 137, 137, 0.522);
+  height: 100%;
+  padding: 15px;
+}
+.logo {
+  border: 1px solid black;
+  margin-left: 40px;
+  width: 275px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.search {
+  width: 45%;
+}
+.search input {
+  width: 100%;
+  padding: 18px 10px;
+  border-radius: 25px;
+  border: none;
+}
+::placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+input:focus::placeholder {
+  color: rgb(128, 123, 123);
+  font-size: 1rem;
+}
+.login {
+  margin-right: 50px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login a {
+  color: rgb(255, 255, 255);
+  background-color: rgb(83, 45, 235);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login a:hover {
+  color: rgb(29, 17, 77);
+  background-color: rgb(255, 255, 255);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(114, 79, 79, 0.653);
+  height: 100%;
+  padding: 10px;
+  overflow-y: scroll;
+}
+.banner::-webkit-scrollbar {
+  width: 0;
+}
+.banner a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 10px;
+}
+.banner a:hover {
+  text-decoration: underline;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+}
+.rent-card {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.rent-flex {
+  display: flex;
+  margin: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.rent-flex h1 {
+  color: rgba(0, 0, 0);
+  font-size: 1.8rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.vehical {
+  background-color: white;
+  padding: 20px;
+  padding-top: 10px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.vehical:hover {
+  box-shadow: 0 0 10px;
+}
+.vehical h1 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.vehical img {
+  cursor: pointer;
+  height: 270px;
+  width: 250px;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.about-inf {
+  background-color: rgba(255, 255, 255, 0.405);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-inf h1 {
+  font-size: 3rem;
+  margin: 20px 10px;
+}
+.about-inf p {
+  padding: 15px;
+  width: 95%;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.about-div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+.box1:hover {
+  box-shadow: 0 0 20px;
+}
+.box1 {
+  background-color: rgba(107, 101, 101, 0.205);
+  border: 1px solid black;
+  height: 100%;
+  width: 45%;
+}
+.info {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(83, 71, 71, 0.9);
+  color: rgb(233, 228, 228);
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+.info h2 {
+  font-size: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 15px 0;
+}
+.info p {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.info p:hover {
+  text-decoration: underline;
+}
+.popular-locations {
+  padding: 25px;
+  height: 100%;
+}
+.trending-locations {
+  padding: 25px;
+  height: 100%;
+}
+.about-us {
+  padding: 25px;
+  height: 100%;
+}
+.follow-us {
+  padding: 25px;
+  height: 100%;
+}
+.footer-icons {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
+}
+.footer-icons i {
+  font-size: 3em;
+}
+/* .f-icons {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-right: 40px;
+  margin-bottom: 10px;
+} */
+.f-badge {
+  display: flex;
+  flex-direction: column;
+}
+.f-badge img {
+  height: 15%;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.footer {
+  height: 40px;
+  font-size: 1.3rem;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 }
